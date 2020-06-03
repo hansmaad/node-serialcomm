@@ -55,7 +55,7 @@ class ListAsyncWorker : public Napi::AsyncWorker
 {
 
 public:
-    ListAsyncWorker(Napi::Env &env)
+    ListAsyncWorker(const Napi::Env &env)
         : Napi::AsyncWorker(env), deferred(Napi::Promise::Deferred::New(env))
     {
     }
