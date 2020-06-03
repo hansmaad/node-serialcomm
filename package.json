@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
+  "files": [
+    "src/*",
+    "lib/*",
+    "binding.gyp"
+  ],
   "scripts": {
     "install": "node-gyp rebuild",
     "build": "node-gyp configure build",
@@ -10,9 +15,12 @@
   },
   "author": "",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "node-addon-api": "^3.0.0",
     "node-gyp": "^7.0.0"
+  },
+  "devDependencies": {
+    
   },
   "gypfile": true
 }
